@@ -138,7 +138,7 @@ def main():
         usage()
     
     try:
-        opts, args = getopt.getopt(sys.argv[1:], "hle:t:p:cu", ["help","listen","execute","target","port","command","upload"])
+        opts, args = getopt.getopt(sys.argv[1:], "hle:t:p:cu:", ["help","listen","execute","target","port","command","upload"])
     except getopt.GetoptError as err:
         print str(err)
         usage()
