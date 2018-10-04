@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys
 import socket
 import getopt
@@ -19,7 +21,7 @@ def usage():
     print 
     
     print "To use the tool: zum.py -t target_host -p port"
-    
+
     print "-l --listen                   - listen on [host]:[port] for incoming connections"
     print "-e --execution                - execute the given file upon receiving a connections"
     print "-c --command                  - initialize a command shell"
@@ -168,3 +170,4 @@ def main():
     if listen:
         server_loop()
 
+main()
