@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#Importing...
+#Importing library
 import sys
 import socket
 import getopt
